@@ -55,22 +55,39 @@ section {
     font-size: 3.5vw;
 }
 
+section>p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background: #fff;
     color: #000;
 }
 
-section.imagem {
+
+
+section#img01 {
     background: url('../img/background001.jpg');
+}
+
+section#img02 {
+    background: url('../img/background002.jpg');
+}
+
+section#img01,
+section#img02 {
     background-size: cover;
     background-attachment: fixed;
+    background-position: right center;
     color: #fff;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.438);
 }
 
 section.imagem>p {
     display: inline-block;
     padding: 5px;
     background: rgba(0, 0, 0, 0.247);
+    text-shadow: 1px 1px 0px #000;
 }
 
 footer {
